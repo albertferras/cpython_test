@@ -27,7 +27,7 @@ CachedDict_init(CachedDictObject *self, PyObject *args, PyObject *kwds)
 {
     if (PyDict_Type.tp_init((PyObject *) self, args, kwds) < 0)
         return -1;
-//     todo check kwds
+//   todo check kwds
     self->buffer = 0;
     self->len = 0;
     return 0;

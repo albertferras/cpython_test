@@ -1,4 +1,5 @@
 #include <Python.h>
+#include "cacheddict.h"
 
 PyObject* foo(PyObject* self, PyObject *args, PyObject *kwargs);
 
@@ -25,6 +26,7 @@ PyObject *PyInit_afctest(void)
   PyObject *version_string;
 
   module = PyModule_Create(&moduledef);
+  PyInit_cacheddict();
 
   if (module == NULL)
   {

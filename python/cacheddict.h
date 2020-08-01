@@ -11,4 +11,6 @@ typedef struct {
 
 CachedDictObject* new_cacheddict();
 
+PyMODINIT_FUNC PyInit_cacheddict(void);
+
 #endif
