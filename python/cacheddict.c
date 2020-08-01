@@ -44,7 +44,7 @@ static PyTypeObject CachedDictType = {
     .tp_methods = CachedDict_methods,
 };
 
-static CachedDictObject*
+CachedDictObject*
 new_cacheddict()
 {
     CachedDictObject* obj = (CachedDictObject*)PyObject_New(CachedDictObject, &CachedDictType);

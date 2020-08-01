@@ -19,7 +19,7 @@ static struct PyModuleDef moduledef = {
   NULL            /* m_free */
 };
 
-PyObject *PyInit_afc(void)
+PyObject *PyInit_afctest(void)
 {
   PyObject *module;
   PyObject *version_string;
