@@ -35,7 +35,7 @@ CachedDict_init(CachedDictObject *self, PyObject *args, PyObject *kwds)
 
 static PyTypeObject CachedDictType = {
     PyVarObject_HEAD_INIT(NULL, 0)
-    .tp_name = "ujson.CachedDict",
+    .tp_name = "afctest.CachedDict",
     .tp_doc = "CachedDict objects",
     .tp_basicsize = sizeof(CachedDictObject),
     .tp_itemsize = 0,
